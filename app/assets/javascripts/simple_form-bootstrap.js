@@ -21,7 +21,7 @@
   $(document).on('ready', function() {
     initializeComponents(document);
   });
-  $(document).on('DOMNodeInserted', function(e) {
+  $(document).on('MutationObserver', function(e) {
     initializeComponents(e.target);
   });
   $(document).on('nested:fieldAdded', function(e) {
